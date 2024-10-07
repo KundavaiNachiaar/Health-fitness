@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Registration-form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style type = "text/css">
+        h1{
+            color: white;
+            font-size: 30px;
+        }
+        table{
+            color: white;
+            border-radius: 25px;
+            font-size: 20px;
+            background: linear-gradient(90deg,#000000 , #0f0957, #aa5e51);
+           /*box-shadow: 0 0 10px rgba(226, 120, 15, 0.777);
+            animation: fadeIn 1s ease-in-out;*/
+            
+        }
+        #btn{
+            color: white;
+            background-color:#aa5e51;
+            border-radius: 10px;
+            height: 40px;
+            width: 120px;
+            font-size: 20px;
+            
+        }
+        body{
+         
+          font-family: "Poppins", sans-serif;
+          background-color: #000000;
+        }
+    </style>
+    </head>
+    <body bgcolor="black">
+        <br>
+        <h1 align = "center">Register Now</h1>
+        <form action="regdb.php" method="get">
+        <table bgcolor="#d07c59" align="center" cellspacing ="20">
+            <tr>
+                <td>Name : </td>
+                <td><input type="text" name="name" style="font-size: 18px;" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Age : </td>
+                <td><input type="text" style="font-size: 18px;" name="age" placeholder="Enter your age"></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td><input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Others">Others</td>
+            </tr>
+            <tr>
+                <td>Height : </td>
+                <td><input type="number" style="font-size: 18px;" id="ht" name="ht" required>
+                    <select required>
+                      <option>cm</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Weight : </td>
+                <td><input type="number" style="font-size: 18px;" id="wt" name="wt" required>
+                    <select >
+                      <option>kg</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Address : </td>
+                <td><input type="text" style="font-size: 18px;" name="addr" placeholder="Enter your address"></td>
+            </tr>
+            <tr>
+                <td>Membership Mode : </td>
+                <td><input type="radio" size="20px" style="font-size: 18px;"  name="mode" value="online">Online(Rs.18000/month)
+                    <input type="radio" name="mode" style="font-size: 18px;" value="offline">Offline(Rs.38000/month)</td>
+            </tr>
+            <tr>
+                <td>Duration : </td>
+                <td><input type="radio" name="dur" style="font-size: 18px;" value="1">1 Month
+                    <input type="radio" name="dur" style="font-size: 18px;" value="12">12 Months
+            </tr>
+            <tr>
+            <td colspan="3" align="center"><input type="submit" name="submit" value="submit" id="btn"></td>
+            </tr>
+            </table>
+        </form>
+    </body>
+    </html>
+
+    
+   
